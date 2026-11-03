@@ -1,5 +1,4 @@
 "use strict";
-
 const http = require("node:http");
 const net = require("node:net");
 const mysql = require("mysql2/promise");
@@ -179,7 +178,7 @@ res.end(
 
         res.statusCode = result.status;
         res.end(result.message);
-
+        
     }
 
     // ====================================
